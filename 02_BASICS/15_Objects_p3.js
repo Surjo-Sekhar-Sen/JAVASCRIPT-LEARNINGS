@@ -12,7 +12,7 @@ console.log(course.courseStudent);
 //this dot notation while accessing the value!!
 //WE CAN USE DE-STRUCTING OF THE OBJECT PROPERTY TO ACCESS IT  EFFECTIVELY AND EASILY!!
 const {courseInstructor} = course;
-// console.log(courseInstructor);
+console.log(courseInstructor);
 
 //OR WE CAN MAKE IT A SMALLER NAME TOO!!
 const {courseStudent : stud} = course;
