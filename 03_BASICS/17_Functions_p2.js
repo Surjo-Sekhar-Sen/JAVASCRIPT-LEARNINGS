@@ -16,5 +16,27 @@ function newvalues(val1, val2, ...num){
     console.log(typeof(num)); //RTEURNS object AS IT IS AN ARRAY!!
     return num;
 }
-console.log(newvalues(200, 500, 2000, 4000)); //HERE THE VALUE 200 WILL BE STORED IN val1, 
+// console.log(newvalues(200, 500, 2000, 4000)); //HERE THE VALUE 200 WILL BE STORED IN val1, 
 //AND 500 IN val2, THE REST OF THEM WILL GET STORED IN num ARRAY!!
+
+//USING OBJECTS IN FUNCTION!!
+const val = {
+    name : "Surjo",
+    price : 199
+}
+
+function obj(anyobj){
+    return `${anyobj.name} you have purchased of about ${anyobj.price} rupees!!`
+}
+// console.log(obj(val));
+
+//IF WE DON'T PROVIDE CORRECT PROPERTIES TO THE OBJECT IN FUNCTIONS THEN THE VALUES WILL COME AS UNDEFINED!!
+function obj1(anyobj){
+    return `${anyobj.name} you have purchased of about ${anyobj.prices} rupees!!`
+}
+// console.log(obj1(val));
+
+console.log(obj({ //WE CAN EVEN GIVEN OUR OWN OBJECT DIRECTLY INSTEAD OF TAKING REFERENCE!!
+    name : "Sekhar",
+    price : 4999
+}))
