@@ -41,3 +41,12 @@ let arrvalue = [
 arrvalue.forEach((item) => {
     console.log(`${item.lang}'s file extension is: .${item.langfile}`);
 })
+
+//PROBLEM WITH forEach()
+const simple = ["hii", "namaste", "hello", "greetings"];
+const check = simple.forEach((item) => {
+    return item; //THIS ACTUALLY RETURNS undefined!! 
+    //THIS IS THE PROBLEM WITH forEach() THAT IT DOES NOT ALLOW ANY
+    //PROPER CODE TO BE PERFORMED ON THE ELEMENTS AND JUST CONSOLE.LOG THEM MOSTLY!!
+});
+console.log(check);
