@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EDITING</title>
+</head>
+<body style = "background-color: #000; color: #fff">
+    <ul class = "langName">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function language(langs){
+        const langval = document.createElement("li");
+        langval.innerHTML = `${langs}`;
+        document.querySelector(".langName").appendChild(langval);
+    }
+    language("Python");
+    language("Html");
+    language("C++");
+
+    function languages(langss){
+        const langval = document.createElement("li");
+        langval.appendChild(document.createTextNode(langss));
+        document.querySelector(".langName").appendChild(langval);
+    }
+    languages("GoLang");
+    languages("Typescript");
+    languages("JAVA");
+</script>
+</html>
